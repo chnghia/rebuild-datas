@@ -1,11 +1,11 @@
 {
   "entity": "Product",
-  "entityLabel": "产品",
+  "entityLabel": "Product",
   "nameField": "productName",
   "fields": [
     {
       "field": "unitPrice",
-      "fieldLabel": "单价",
+      "fieldLabel": "UnitPrice",
       "displayType": "DECIMAL",
       "nullable": false,
       "updatable": true,
@@ -17,7 +17,7 @@
     },
     {
       "field": "productName",
-      "fieldLabel": "产品名称",
+      "fieldLabel": "Product Name",
       "displayType": "TEXT",
       "nullable": false,
       "updatable": true,

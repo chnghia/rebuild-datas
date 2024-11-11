@@ -1,14 +1,14 @@
 {
 	"entity": "Warehouse",
 	"entityIcon": "view-quilt",
-	"entityLabel": "仓库",
-	"comments": "仓库是以用于存放商品的地方",
+	"entityLabel": "Warehouse",
+	"comments": "A warehouse is a place for storing goods.",
 	"nameField": "WarehouseName",
 	"quickFields": "",
 	"fields": [
 		{
 			"field": "WarehouseName",
-			"fieldLabel": "仓库名称",
+			"fieldLabel": "Warehouse Name",
 			"displayType": "TEXT",
 			"nullable": false,
 			"updatable": true,

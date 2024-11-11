@@ -1,11 +1,11 @@
 {
   "entity": "Account",
-  "entityLabel": "客户",
+  "entityLabel": "Account",
   "nameField": "accountName",
   "fields": [
     {
       "field": "accountName",
-      "fieldLabel": "客户名称",
+      "fieldLabel": "Account Name",
       "displayType": "TEXT",
       "nullable": false,
       "updatable": true,
@@ -13,7 +13,7 @@
     },
     {
       "field": "telephone",
-      "fieldLabel": "电话",
+      "fieldLabel": "Telephone",
       "displayType": "PHONE",
       "nullable": false,
       "updatable": true,
@@ -21,7 +21,7 @@
     },
     {
       "field": "address",
-      "fieldLabel": "地址",
+      "fieldLabel": "Address",
       "displayType": "TEXT",
       "nullable": true,
       "updatable": true,
@@ -29,7 +29,7 @@
     },
     {
       "field": "industry",
-      "fieldLabel": "所属行业",
+      "fieldLabel": "Industry",
       "displayType": "CLASSIFICATION",
       "nullable": true,
       "updatable": true,
@@ -40,7 +40,7 @@
     },
     {
       "field": "location",
-      "fieldLabel": "所在地区",
+      "fieldLabel": "Location",
       "displayType": "CLASSIFICATION",
       "nullable": true,
       "updatable": true,
@@ -51,21 +51,21 @@
     },
     {
       "field": "source",
-      "fieldLabel": "来源",
+      "fieldLabel": "Source",
       "displayType": "PICKLIST",
       "nullable": true,
       "updatable": true,
       "repeatable": true,
       "items": [
-        ["百度", false],
-        ["老客户介绍", false],
-        ["自主注册", true],
-        ["其他", false]
+        ["Baidu", false],
+        ["Old Customer", false],
+        ["Self-registration", true],
+        ["Other", false]
       ]
     },
     {
       "field": "website",
-      "fieldLabel": "网站",
+      "fieldLabel": "Website",
       "displayType": "URL",
       "nullable": true,
       "updatable": true,

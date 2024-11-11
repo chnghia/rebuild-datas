@@ -1,11 +1,11 @@
 {
   "entity": "SalesOrder",
-  "entityLabel": "订单",
+  "entityLabel": "Order",
   "nameField": "orderNumber",
   "fields": [
     {
       "field": "orderNumber",
-      "fieldLabel": "订单编号",
+      "fieldLabel": "Order Number",
       "displayType": "SERIES",
       "nullable": false,
       "updatable": false,
@@ -17,7 +17,7 @@
     },
     {
       "field": "relatedAccount",
-      "fieldLabel": "相关客户",
+      "fieldLabel": "Related Account",
       "displayType": "REFERENCE",
       "nullable": false,
       "updatable": true,
@@ -27,7 +27,7 @@
     },
     {
       "field": "totalAmount",
-      "fieldLabel": "总计金额",
+      "fieldLabel": "Total Amount",
       "displayType": "DECIMAL",
       "nullable": true,
       "updatable": true,
@@ -91,12 +91,12 @@
   },
   "slave": {
     "entity": "SalesOrderItem",
-    "entityLabel": "订单明细",
+    "entityLabel": "Order Items",
     "nameField": "createdOn",
     "fields": [
       {
         "field": "amount",
-        "fieldLabel": "金额",
+        "fieldLabel": "Amount",
         "displayType": "DECIMAL",
         "nullable": true,
         "updatable": true,
@@ -108,17 +108,17 @@
       },
       {
         "field": "productId",
-        "fieldLabel": "产品",
+        "fieldLabel": "Product",
         "displayType": "REFERENCE",
         "nullable": false,
         "updatable": true,
         "repeatable": true,
         "refEntity": "Product",
-        "refEntityLabel": "产品"
+        "refEntityLabel": "Product"
       },
       {
         "field": "quantity",
-        "fieldLabel": "数量",
+        "fieldLabel": "Quantity",
         "displayType": "NUMBER",
         "nullable": true,
         "updatable": true,

@@ -1,14 +1,14 @@
 {
 	"entity": "StockTransfer",
 	"entityIcon": "repeat",
-	"entityLabel": "调拨",
-	"comments": "调拨就是两个仓库之间的货物相互调配",
+	"entityLabel": "Transfer",
+	"comments": "Transfer is the mutual allocation of goods between two warehouses.",
 	"nameField": "TransferNo",
 	"quickFields": "",
 	"fields": [
 		{
 			"field": "TransferNo",
-			"fieldLabel": "调拨编号",
+			"fieldLabel": "Transfer Number",
 			"displayType": "SERIES",
 			"nullable": false,
 			"updatable": false,
@@ -21,7 +21,7 @@
 		},
 		{
 			"field": "StockTransferName",
-			"fieldLabel": "主题",
+			"fieldLabel": "Subject",
 			"displayType": "TEXT",
 			"nullable": true,
 			"updatable": true,
@@ -35,7 +35,7 @@
 		},
 		{
 			"field": "TransferTo",
-			"fieldLabel": "调入仓库",
+			"fieldLabel": "Transfer to Warehouse",
 			"displayType": "REFERENCE",
 			"nullable": false,
 			"updatable": true,
@@ -48,7 +48,7 @@
 		},
 		{
 			"field": "TransferDate",
-			"fieldLabel": "调拨日期",
+			"fieldLabel": "Transfer Date",
 			"displayType": "DATE",
 			"nullable": false,
 			"updatable": true,
@@ -136,7 +136,7 @@
 	"transforms": [],
 	"approvals": [
 		{
-			"name": "调拨审批",
+			"name": "Transfer Approval",
 			"flowDefinition": {
 				"nodes": [
 					{
@@ -166,13 +166,13 @@
 	"detail": {
 		"entity": "StockTransferItem",
 		"entityIcon": "assignment",
-		"entityLabel": "调拨明细",
+		"entityLabel": "Transfer Details",
 		"nameField": "ProductId",
 		"quickFields": "",
 		"fields": [
 			{
 				"field": "ToStockInId",
-				"fieldLabel": "S调入入库",
+				"fieldLabel": "ToStockInId",
 				"displayType": "REFERENCE",
 				"nullable": true,
 				"updatable": false,
@@ -185,7 +185,7 @@
 			},
 			{
 				"field": "TransferFrom",
-				"fieldLabel": "调出仓库",
+				"fieldLabel": "Transfer From",
 				"displayType": "REFERENCE",
 				"nullable": false,
 				"updatable": true,
@@ -198,7 +198,7 @@
 			},
 			{
 				"field": "ToStockOutId",
-				"fieldLabel": "S调出出库",
+				"fieldLabel": "ToStockOutId",
 				"displayType": "REFERENCE",
 				"nullable": true,
 				"updatable": false,
@@ -211,7 +211,7 @@
 			},
 			{
 				"field": "ProductId",
-				"fieldLabel": "产品",
+				"fieldLabel": "Product",
 				"displayType": "REFERENCE",
 				"nullable": false,
 				"updatable": true,
@@ -224,7 +224,7 @@
 			},
 			{
 				"field": "Number",
-				"fieldLabel": "数量",
+				"fieldLabel": "Quantity",
 				"displayType": "NUMBER",
 				"nullable": false,
 				"updatable": true,
@@ -292,7 +292,7 @@
 					"useTransform": "037-01826966df170cd6",
 					"transformOnce": false
 				},
-				"name": "调拨出库",
+				"name": "Transfer out",
 				"priority": 99,
 				"when": 128,
 				"whenTimer": "D:1:0:23"
@@ -304,7 +304,7 @@
 					"useTransform": "037-0182696893bf0cd9",
 					"transformOnce": false
 				},
-				"name": "调拨入库",
+				"name": "Transfer to Warehouse",
 				"priority": 99,
 				"when": 128,
 				"whenTimer": "D:1:0:23"
@@ -325,7 +325,7 @@
 					],
 					"readonlyFields": true
 				},
-				"name": "调拨入库作废",
+				"name": "Cancel Transfer Inbound",
 				"priority": 99,
 				"when": 256,
 				"whenTimer": "D:1:0:23"
@@ -346,7 +346,7 @@
 					],
 					"readonlyFields": true
 				},
-				"name": "调拨出库作废",
+				"name": "Cancel Transfer Outbound",
 				"priority": 99,
 				"when": 256,
 				"whenTimer": "D:1:0:23"
@@ -354,7 +354,7 @@
 		],
 		"transforms": [
 			{
-				"name": "调出仓出库",
+				"name": "Transfer Out from Warehouse",
 				"_id": "037-01826966df170cd6",
 				"targetEntity": "OutStock",
 				"config": {
@@ -379,7 +379,7 @@
 				}
 			},
 			{
-				"name": "调入仓入库",
+				"name": "Transfer In to Warehouse",
 				"_id": "037-0182696893bf0cd9",
 				"targetEntity": "InStock",
 				"config": {

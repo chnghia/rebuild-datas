@@ -1,6 +1,6 @@
 [
   {
-    "name": "客户",
+    "name": "Customer",
     "key": "Account",
     "file": "ACCOUNT-1.0.json",
     "source": "https://getrebuild.com/",
@@ -8,7 +8,7 @@
     "updated": "2019-04-29"
   },
   {
-    "name": "产品",
+    "name": "Product",
     "key": "Product",
     "file": "PRODUCT-1.0.json",
     "source": "https://getrebuild.com/",
@@ -16,7 +16,7 @@
     "updated": "2020-04-02"
   },
   {
-    "name": "订单",
+    "name": "Order",
     "key": "SalesOrder",
     "file": "SALESORDER-1.0.json",
     "source": "https://getrebuild.com/",

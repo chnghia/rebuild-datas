@@ -1,20 +1,20 @@
 [
     {
-        "name": "中国省市区镇四级 (含港澳台)",
+        "name": "China Provinces, Cities, Districts, and Towns (Including Hong Kong, Macau, and Taiwan)",
         "file": "CHINA-PCAS.json",
         "author": "REBUILD",
         "source": "https://github.com/modood/Administrative-divisions-of-China",
         "updated": "2020-04-29"
     },
     {
-        "name": "国标行业分类二级 (GB/T 4754-2017)",
+        "name": "National Standard Industry Classification (GB/T 4754-2017)",
         "file": "CHINA-ICNEA.json",
         "author": "REBUILD",
         "source": "http://www.stats.gov.cn/tjsj/tjbz/",
         "updated": "2020-04-29"
     },
     {
-        "name": "国家地区 (中英)",
+        "name": "Countries and Regions (Chinese and English)",
         "file": "WORLD-STATES.en.json",
         "author": "REBUILD",
         "source": "https://github.com/dr5hn/countries-states-cities-database",
