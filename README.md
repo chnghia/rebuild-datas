@@ -1,8 +1,8 @@
 
-## 如何提交数据
-请参考不同数据目录下已有的数据文件格式，编写好以后通过 PR 的方式提交。我们会进行审核校对并合并，合并后所有 RB 用户均可使用。
+## How to Submit Data
+Please refer to the data file formats in different data directories. After preparing your file, submit it via a PR (Pull Request). We will review and proofread it before merging. Once merged, all RB users will have access to it.
 
-请注意，RB 仓库只接收通用数据。
+Please note that the RB repository only accepts general-purpose data.
 
 ## rebuild-datas
 Provide central data support for [rebuild](https://github.com/getrebuild/rebuild) projects, such as classification data, entity modules, and configuration. For details, please refer to the `index.json` file in each directory.

@@ -1,42 +1,42 @@
 [
   {
-    "name": "线索",
-    "desc": "线索是与客户初次接触获得的原始信息，可以是从展会中获得的名片，通过推广活动获得的电话号码，或是会议、广告、外部购买等渠道获得的客户简单信息，然后通过管理和跟进可以转化为客户",
+    "name": "Lead",
+    "desc": "A lead is the initial information obtained from the first contact with a customer. This could be a business card from a trade show, a phone number obtained through promotional activities, or basic customer information acquired from meetings, advertisements, or external purchases. Leads can be converted into customers through management and follow-up.",
     "key": "Lead",
     "file": "schema-Lead.json",
     "refs": []
   },
   {
-    "name": "联系人",
-    "desc": "即与企业直接联系的客户方相关人员。如果是企业客户，联系人是您与企业联系沟通的人。如果是个人客户，联系人可以是与客户有关系的沟通联系人",
+    "name": "Contact",
+    "desc": "A contact is a relevant individual on the customer side who is in direct communication with the business. For business clients, the contact is the person who communicates with the company. For individual clients, a contact could be a person associated with the client who assists in communication.",
     "key": "Contact",
     "file": "schema-Contact.json",
     "refs": ["Account"]
   },
   {
-    "name": "客户",
-    "desc": "客户是指与企业业务有往来企业、团体或个人，是企业的重要资源，可以通过线索转化而来，或是销售挖掘等多种渠道获取",
+    "name": "Account",
+    "desc": "An account represents a business, organization, or individual that has business dealings with the company. Accounts are vital resources for the company and can be converted from leads or acquired through sales outreach and various other channels.",
     "key": "Account",
     "file": "schema-Account.json",
     "refs": ["Lead"]
   },
   {
-    "name": "产品",
-    "desc": "产品是企业向客户提供的各种有价值的物品、服务、信息、人力、组织等，或它们的组合，可以是有形的或者无形的。但是他们均可以被某种单位或单位组合进行度量，同时表明价值。产品作为企业提供服务的核心，整个企业的营销业务是围绕着产品展开的",
+    "name": "Product",
+    "desc": "A product is any valuable item, service, information, human resource, organization, or combination thereof that the company provides to customers. Products can be tangible or intangible but can all be measured by some unit or combination of units, reflecting their value. As the core of the company’s service offerings, the entire company’s marketing activities revolve around its products.",
     "key": "Product",
     "file": "schema-Product.json",
     "refs": []
   },
   {
-    "name": "订单",
-    "desc": "销售订单是企业与客户之间签订的一种销售协议，销售订单实现企业与客户之间的沟通，实现客户对企业待售货物的一种请求，同时也是企业对客户的一种销售承诺。通过订单信息的维护与管理，实现企业对销售的计划性控制，使企业的销售活动、生产活动、采购活动处于有序、流畅、高效的状态",
+    "name": "Sales Order",
+    "desc": "A sales order is a sales agreement between the company and a customer. It facilitates communication between the company and the customer and represents a customer’s request for goods for sale, as well as the company’s sales commitment to the customer. By managing and maintaining order information, the company can control its sales plans, ensuring that its sales, production, and procurement activities remain orderly, smooth, and efficient.",
     "key": "SalesOrder",
     "file": "schema-SalesOrder.json",
     "refs": ["Account", "Contact", "Product", "Quotation"]
   },
   {
-    "name": "报价单",
-    "desc": "报价单是企业在销售过程当中，向客户提供的产品报价清单，也为销售订单提供了一个基本的价格信息",
+    "name": "Quotation",
+    "desc": "A quotation is a price list provided by the company to the customer during the sales process. It also provides basic pricing information for the sales order.",
     "key": "Quotation",
     "file": "schema-Quotation.json",
     "refs": ["Account", "Contact"]

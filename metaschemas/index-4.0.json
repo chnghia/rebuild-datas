@@ -1,13 +1,13 @@
 {
   "types": {
-    "CRM 客户管理": [
+    "CRM Customer Relationship Management": [
       "Lead",
       "Contact",
       "Account",
       "Product",
       "SalesOrder"
     ],
-    "WMS 库存管理": [
+    "WMS Warehouse Management System": [
       "Warehouse",
       "InStock",
       "OutStock",
