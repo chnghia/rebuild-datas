@@ -1,14 +1,14 @@
 {
 	"entity": "InStock",
 	"entityIcon": "assignment-returned",
-	"entityLabel": "Warehouse",
-	"comments": "Warehouse entry is the confirmation of the quantity of goods entering the warehouse.",
+	"entityLabel": "InStock",
+	"comments": "InStock entry is the confirmation of the quantity of goods entering the warehouse.",
 	"nameField": "InStockNo",
 	"quickFields": "",
 	"fields": [
 		{
 			"field": "Type",
-			"fieldLabel": "Warehouse Type",
+			"fieldLabel": "InStock Type",
 			"displayType": "PICKLIST",
 			"nullable": false,
 			"updatable": true,
@@ -210,8 +210,8 @@
 	"detail": {
 		"entity": "InStockItem",
 		"entityIcon": "assignment",
-		"entityLabel": "Warehouse details",
-		"comments": "Warehouse entry is the confirmation of the quantity of goods entering the warehouse.",
+		"entityLabel": "InStockItem",
+		"comments": "InStockItem entry is the confirmation of the quantity of goods entering the warehouse.",
 		"nameField": "ProductId",
 		"quickFields": "",
 		"fields": [
