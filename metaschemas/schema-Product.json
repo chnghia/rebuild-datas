@@ -1,14 +1,14 @@
 {
 	"entity": "Product",
 	"entityIcon": "collection-item",
-	"entityLabel": "产品",
-	"comments": "产品是企业向客户提供的各种有价值的物品、服务、信息、人力、组织等，或它们的组合，可以是有形的或者无形的。但是他们均可以被某种单位或单位组合进行度量，同时表明价值。产品作为企业提供服务的核心，整个企业的营销业务是围绕着产品展开的",
+	"entityLabel": "Product",
+	"comments": "Products are various valuable items, services, information, human resources, organizations, etc., or their combination, provided by enterprises to customers. They can be tangible or intangible. However, they can all be measured by some unit or combination of units and indicate their value. Products are the core of the services provided by enterprises, and the entire marketing business of enterprises revolves around products.",
 	"nameField": "ProductName",
 	"quickFields": "ProductName",
 	"fields": [
 		{
 			"field": "UnitType",
-			"fieldLabel": "单位",
+			"fieldLabel": "UnitType",
 			"displayType": "PICKLIST",
 			"nullable": false,
 			"updatable": true,
@@ -16,13 +16,13 @@
 			"queryable": true,
 			"items": [
 				[
-					"套",
+					"Set",
 					true,
 					0,
 					""
 				],
 				[
-					"支",
+					"Unit",
 					false,
 					0,
 					""
@@ -31,7 +31,7 @@
 		},
 		{
 			"field": "UnitPrice",
-			"fieldLabel": "单价",
+			"fieldLabel": "UnitPrice",
 			"displayType": "DECIMAL",
 			"nullable": false,
 			"updatable": true,
@@ -44,7 +44,7 @@
 		},
 		{
 			"field": "ProductName",
-			"fieldLabel": "产品名称",
+			"fieldLabel": "ProductName",
 			"displayType": "TEXT",
 			"nullable": false,
 			"updatable": true,

@@ -1,14 +1,14 @@
 {
 	"entity": "Stock",
 	"entityIcon": "assignment-check",
-	"entityLabel": "库存",
-	"comments": "库存是仓库中实际储存的货物",
+	"entityLabel": "Stock",
+	"comments": "Inventory is the actual goods stored in the warehouse",
 	"nameField": "ProductId",
 	"quickFields": "WarehouseId,ProductId",
 	"fields": [
 		{
 			"field": "InTotalQuantity",
-			"fieldLabel": "总入库量",
+			"fieldLabel": "InTotalQuantity",
 			"displayType": "NUMBER",
 			"nullable": true,
 			"updatable": true,
@@ -23,7 +23,7 @@
 		},
 		{
 			"field": "OutTotalQuantity",
-			"fieldLabel": "总出库量",
+			"fieldLabel": "OutTotalQuantity",
 			"displayType": "NUMBER",
 			"nullable": true,
 			"updatable": true,
@@ -38,7 +38,7 @@
 		},
 		{
 			"field": "WarehouseId",
-			"fieldLabel": "仓库",
+			"fieldLabel": "Warehouse",
 			"displayType": "REFERENCE",
 			"nullable": false,
 			"updatable": true,
@@ -52,7 +52,7 @@
 		},
 		{
 			"field": "ProductId",
-			"fieldLabel": "产品",
+			"fieldLabel": "Product",
 			"displayType": "REFERENCE",
 			"nullable": false,
 			"updatable": true,
@@ -65,7 +65,7 @@
 		},
 		{
 			"field": "CurrentQuantity",
-			"fieldLabel": "当前库存量",
+			"fieldLabel": "CurrentQuantity",
 			"displayType": "NUMBER",
 			"nullable": true,
 			"updatable": true,
@@ -164,7 +164,7 @@
 				],
 				"readonlyFields": false
 			},
-			"name": "当前库存",
+			"name": "Current Inventory",
 			"priority": 78,
 			"when": 4,
 			"whenTimer": "D:1:0:23"
@@ -187,7 +187,7 @@
 				},
 				"version": 2
 			},
-			"name": "0库存校验",
+			"name": "0Inventory Verification",
 			"priority": 0,
 			"when": 4,
 			"whenTimer": "D:1:0:23"

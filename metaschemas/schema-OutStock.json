@@ -1,14 +1,14 @@
 {
 	"entity": "OutStock",
 	"entityIcon": "assignment-return",
-	"entityLabel": "出库",
-	"comments": "出库是对仓库内商品出库数量的确认",
+	"entityLabel": "Out of stock",
+	"comments": "Outbound delivery is the confirmation of the number of goods outbound from the warehouse.",
 	"nameField": "OutStockNo",
 	"quickFields": "",
 	"fields": [
 		{
 			"field": "OutTime",
-			"fieldLabel": "出库时间",
+			"fieldLabel": "Shipping Date",
 			"displayType": "DATE",
 			"nullable": false,
 			"updatable": true,
@@ -21,7 +21,7 @@
 		},
 		{
 			"field": "WarehouseId",
-			"fieldLabel": "仓库",
+			"fieldLabel": "Warehouse",
 			"displayType": "REFERENCE",
 			"nullable": false,
 			"updatable": true,
@@ -34,7 +34,7 @@
 		},
 		{
 			"field": "OutStockNo",
-			"fieldLabel": "出库编号",
+			"fieldLabel": "Shipment Num",
 			"displayType": "SERIES",
 			"nullable": false,
 			"updatable": false,
@@ -113,14 +113,14 @@
 	"detail": {
 		"entity": "OutStockItem",
 		"entityIcon": "assignment",
-		"entityLabel": "出库明细",
-		"comments": "出库是对仓库内商品出库数量的确认",
+		"entityLabel": "Outgoing warehouse details",
+		"comments": "Outbound delivery is the confirmation of the number of goods outbound from the warehouse.",
 		"nameField": "ProductId",
 		"quickFields": "",
 		"fields": [
 			{
 				"field": "ProductId",
-				"fieldLabel": "产品",
+				"fieldLabel": "Product",
 				"displayType": "REFERENCE",
 				"nullable": false,
 				"updatable": true,
@@ -133,7 +133,7 @@
 			},
 			{
 				"field": "Quantity",
-				"fieldLabel": "数量",
+				"fieldLabel": "Quantity",
 				"displayType": "NUMBER",
 				"nullable": false,
 				"updatable": true,
@@ -223,7 +223,7 @@
 						}
 					]
 				},
-				"name": "出库聚合",
+				"name": "Outbound Aggregation",
 				"priority": 10,
 				"when": 7,
 				"whenTimer": "D:1"

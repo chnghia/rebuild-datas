@@ -1,14 +1,14 @@
 {
   "entity": "Account",
   "entityIcon": "city-alt",
-  "entityLabel": "客户",
-  "comments": "客户是指与企业业务有往来企业、团体或个人，是企业的重要资源，可以通过线索转化而来，或是销售挖掘等多种渠道获取",
+  "entityLabel": "Account",
+  "comments": "Customers refer to companies, groups or individuals that have business dealings with an enterprise. They are important resources for an enterprise and can be obtained through leads, sales mining and other channels.",
   "nameField": "AccountName",
   "quickFields": "AccountName,Telephone",
   "fields": [
     {
       "field": "AccountName",
-      "fieldLabel": "客户名称",
+      "fieldLabel": "AccountName",
       "displayType": "TEXT",
       "nullable": false,
       "updatable": true,
@@ -17,7 +17,7 @@
     },
     {
       "field": "Address",
-      "fieldLabel": "详细地址",
+      "fieldLabel": "Address",
       "displayType": "TEXT",
       "nullable": true,
       "updatable": true,
@@ -26,7 +26,7 @@
     },
     {
       "field": "Telephone",
-      "fieldLabel": "电话",
+      "fieldLabel": "Telephone",
       "displayType": "PHONE",
       "nullable": true,
       "updatable": true,
@@ -35,7 +35,7 @@
     },
     {
       "field": "SourceLead",
-      "fieldLabel": "原始线索",
+      "fieldLabel": "SourceLead",
       "displayType": "REFERENCE",
       "nullable": true,
       "updatable": true,
@@ -45,7 +45,7 @@
     },
     {
       "field": "Industry",
-      "fieldLabel": "所属行业",
+      "fieldLabel": "Industry",
       "displayType": "CLASSIFICATION",
       "nullable": true,
       "updatable": true,
@@ -57,7 +57,7 @@
     },
     {
       "field": "Area",
-      "fieldLabel": "所在地区",
+      "fieldLabel": "Area",
       "displayType": "CLASSIFICATION",
       "nullable": true,
       "updatable": true,
@@ -69,7 +69,7 @@
     },
     {
       "field": "Website",
-      "fieldLabel": "网站",
+      "fieldLabel": "Website",
       "displayType": "URL",
       "nullable": true,
       "updatable": true,

@@ -1,14 +1,14 @@
 {
 	"entity": "InStock",
 	"entityIcon": "assignment-returned",
-	"entityLabel": "入库",
-	"comments": "入库是对仓库内商品入库数量的确认",
+	"entityLabel": "Warehouse",
+	"comments": "Warehouse entry is the confirmation of the quantity of goods entering the warehouse.",
 	"nameField": "InStockNo",
 	"quickFields": "",
 	"fields": [
 		{
 			"field": "WarehouseId",
-			"fieldLabel": "入库仓库",
+			"fieldLabel": "Inbound warehouse",
 			"displayType": "REFERENCE",
 			"nullable": false,
 			"updatable": true,
@@ -21,7 +21,7 @@
 		},
 		{
 			"field": "InTime",
-			"fieldLabel": "入库时间",
+			"fieldLabel": "Warehouse Date",
 			"displayType": "DATE",
 			"nullable": false,
 			"updatable": true,
@@ -34,7 +34,7 @@
 		},
 		{
 			"field": "InStockNo",
-			"fieldLabel": "入库编号",
+			"fieldLabel": "Inventory Number",
 			"displayType": "SERIES",
 			"nullable": false,
 			"updatable": false,
@@ -97,14 +97,14 @@
 	"detail": {
 		"entity": "InStockItem",
 		"entityIcon": "assignment",
-		"entityLabel": "入库明细",
-		"comments": "入库是对仓库内商品入库数量的确认",
+		"entityLabel": "Warehouse details",
+		"comments": "Warehouse entry is the confirmation of the quantity of goods entering the warehouse.",
 		"nameField": "ProductId",
 		"quickFields": "",
 		"fields": [
 			{
 				"field": "ProductId",
-				"fieldLabel": "产品",
+				"fieldLabel": "Product",
 				"displayType": "REFERENCE",
 				"nullable": false,
 				"updatable": true,
@@ -117,7 +117,7 @@
 			},
 			{
 				"field": "Quantity",
-				"fieldLabel": "数量",
+				"fieldLabel": "Quantity",
 				"displayType": "NUMBER",
 				"nullable": false,
 				"updatable": true,
@@ -195,7 +195,7 @@
 						}
 					]
 				},
-				"name": "入库聚合",
+				"name": "Inbound aggregation",
 				"priority": 10,
 				"when": 7,
 				"whenTimer": "D:1"

@@ -1,14 +1,14 @@
 {
 	"entity": "Lead",
 	"entityIcon": "pin-account",
-	"entityLabel": "线索",
-	"comments": "线索是与客户初次接触获得的原始信息，可以是从展会中获得的名片，通过推广活动获得的电话号码，或是会议、广告、外部购买等渠道获得的客户简单信息，然后通过管理和跟进可以转化为客户",
+	"entityLabel": "Lead",
+	"comments": "Leads are the original information obtained from the first contact with customers. They can be business cards obtained from exhibitions, phone numbers obtained through promotional activities, or simple customer information obtained through conferences, advertisements, external purchases, etc., which can then be converted into customers through management and follow-up.",
 	"nameField": "LeadName",
 	"quickFields": "",
 	"fields": [
 		{
 			"field": "Telephone",
-			"fieldLabel": "联系电话",
+			"fieldLabel": "Telephone",
 			"displayType": "PHONE",
 			"nullable": true,
 			"updatable": true,
@@ -17,7 +17,7 @@
 		},
 		{
 			"field": "LeadName",
-			"fieldLabel": "线索名称",
+			"fieldLabel": "LeadName",
 			"displayType": "TEXT",
 			"nullable": false,
 			"updatable": true,
@@ -26,7 +26,7 @@
 		},
 		{
 			"field": "ContactName",
-			"fieldLabel": "联系人",
+			"fieldLabel": "ContactName",
 			"displayType": "TEXT",
 			"nullable": false,
 			"updatable": true,
@@ -35,7 +35,7 @@
 		},
 		{
 			"field": "Industry",
-			"fieldLabel": "所属行业",
+			"fieldLabel": "Industry",
 			"displayType": "CLASSIFICATION",
 			"nullable": true,
 			"updatable": true,
@@ -47,7 +47,7 @@
 		},
 		{
 			"field": "Email",
-			"fieldLabel": "邮箱",
+			"fieldLabel": "Email",
 			"displayType": "EMAIL",
 			"nullable": true,
 			"updatable": true,
@@ -56,7 +56,7 @@
 		},
 		{
 			"field": "Source",
-			"fieldLabel": "来源",
+			"fieldLabel": "Source",
 			"displayType": "PICKLIST",
 			"nullable": true,
 			"updatable": true,
@@ -64,42 +64,42 @@
 			"queryable": true,
 			"items": [
 				[
-					"官网",
+					"Website",
 					false,
 					0,
 					"",
 					"012-0182827523b600a0"
 				],
 				[
-					"展会",
+					"Exhibition",
 					false,
 					0,
 					"",
 					"012-0182827523b900a1"
 				],
 				[
-					"名片",
+					"Business card",
 					false,
 					0,
 					"",
 					"012-0182827523ba00a2"
 				],
 				[
-					"会议营销",
+					"Conference Marketing",
 					false,
 					0,
 					"",
 					"012-0182827523bb00a3"
 				],
 				[
-					"百度",
+					"Baidu",
 					false,
 					0,
 					"",
 					"012-0182827523bd00a4"
 				],
 				[
-					"其他",
+					"Other",
 					true,
 					0,
 					"",
@@ -109,7 +109,7 @@
 		},
 		{
 			"field": "Area",
-			"fieldLabel": "所在地区",
+			"fieldLabel": "Area",
 			"displayType": "CLASSIFICATION",
 			"nullable": true,
 			"updatable": true,
@@ -183,7 +183,7 @@
 	"triggers": [],
 	"transforms": [
 		{
-			"name": "线索转客户",
+			"name": "Lead to customer",
 			"_id": "037-0182827523b0009f",
 			"targetEntity": "Account",
 			"config": {

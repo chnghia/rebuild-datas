@@ -1,14 +1,14 @@
 {
   "entity": "Quotation",
   "entityIcon": "collection-text",
-  "entityLabel": "报价单",
-  "comments": "报价单是企业在销售过程当中，向客户提供的产品报价清单，也为销售订单提供了一个基本的价格信息",
+  "entityLabel": "Quotation",
+  "comments": "A quotation is a list of product prices provided by the company to the customer during the sales process, which also serves as basic pricing information for the sales order.",
   "nameField": "QuotationName",
   "quickFields": "QuoteNumber,QuotationName",
   "fields": [
     {
       "field": "ContactId",
-      "fieldLabel": "联系人",
+      "fieldLabel": "Contact",
       "displayType": "REFERENCE",
       "nullable": true,
       "updatable": true,
@@ -18,7 +18,7 @@
     },
     {
       "field": "AccountId",
-      "fieldLabel": "相关客户",
+      "fieldLabel": "Account",
       "displayType": "REFERENCE",
       "nullable": false,
       "updatable": true,
@@ -28,7 +28,7 @@
     },
     {
       "field": "Status",
-      "fieldLabel": "报价阶段",
+      "fieldLabel": "Status",
       "displayType": "PICKLIST",
       "nullable": false,
       "updatable": true,
@@ -36,32 +36,32 @@
       "queryable": true,
       "items": [
         [
-          "草稿",
+          "Draft",
           true,
           0
         ],
         [
-          "谈判",
+          "Negotiation",
           false,
           0
         ],
         [
-          "已搁置",
+          "On hold",
           false,
           0
         ],
         [
-          "已确认",
+          "Confirmed",
           false,
           0
         ],
         [
-          "赢单关闭",
+          "Win",
           false,
           0
         ],
         [
-          "丢单关闭",
+          "Lost",
           false,
           0
         ]
@@ -69,7 +69,7 @@
     },
     {
       "field": "QuotationName",
-      "fieldLabel": "主题",
+      "fieldLabel": "Subject",
       "displayType": "TEXT",
       "nullable": false,
       "updatable": true,
@@ -78,7 +78,7 @@
     },
     {
       "field": "ValidTill",
-      "fieldLabel": "报价有效期",
+      "fieldLabel": "ValidTill",
       "displayType": "DATE",
       "nullable": false,
       "updatable": true,
@@ -91,7 +91,7 @@
     },
     {
       "field": "QuoteNumber",
-      "fieldLabel": "报价编号",
+      "fieldLabel": "QuoteNumber",
       "displayType": "SERIES",
       "nullable": false,
       "updatable": false,
@@ -164,7 +164,7 @@
   "fillins": [],
   "filters": [
     {
-      "filterName": "我的报价单",
+      "filterName": "My Quote",
       "config": {
         "items": [
           {
@@ -180,7 +180,7 @@
   "triggers": [],
   "approvals": [
     {
-      "name": "报价审批",
+      "name": "Quotation approval",
       "flowDefinition": {
         "nodes": [
           {

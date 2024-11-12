@@ -1,14 +1,14 @@
 {
 	"entity": "StockCheck",
 	"entityIcon": "assignment-alert",
-	"entityLabel": "盘点",
-	"comments": "盘点是指定期或临时对库存商品实际数量进行清查、清点的一种作业",
+	"entityLabel": "Stock Check",
+	"comments": "Inventory is a process of checking and counting the actual quantity of inventory goods on a regular or temporary basis.",
 	"nameField": "StockCheckNo",
 	"quickFields": "",
 	"fields": [
 		{
 			"field": "StockCheckNo",
-			"fieldLabel": "盘点编号",
+			"fieldLabel": "StockCheckNo",
 			"displayType": "SERIES",
 			"nullable": false,
 			"updatable": false,
@@ -21,7 +21,7 @@
 		},
 		{
 			"field": "CheckDate",
-			"fieldLabel": "盘点日期",
+			"fieldLabel": "CheckDate",
 			"displayType": "DATE",
 			"nullable": false,
 			"updatable": true,
@@ -34,7 +34,7 @@
 		},
 		{
 			"field": "StockCheckName",
-			"fieldLabel": "主题",
+			"fieldLabel": "Subject",
 			"displayType": "TEXT",
 			"nullable": true,
 			"updatable": true,
@@ -114,7 +114,7 @@
 	"transforms": [],
 	"approvals": [
 		{
-			"name": "盘点审批",
+			"name": "Inventory approval",
 			"flowDefinition": {
 				"nodes": [
 					{
@@ -138,13 +138,13 @@
 	"detail": {
 		"entity": "StockCheckItem",
 		"entityIcon": "assignment",
-		"entityLabel": "盘点明细",
+		"entityLabel": "Inventory details",
 		"nameField": "ProductId",
 		"quickFields": "",
 		"fields": [
 			{
 				"field": "ToStockInId",
-				"fieldLabel": "S盘盈入库",
+				"fieldLabel": "ToStockInId",
 				"displayType": "REFERENCE",
 				"nullable": true,
 				"updatable": false,
@@ -157,7 +157,7 @@
 			},
 			{
 				"field": "ToStockOutId",
-				"fieldLabel": "S盘亏出库",
+				"fieldLabel": "ToStockOutId",
 				"displayType": "REFERENCE",
 				"nullable": true,
 				"updatable": false,
@@ -170,7 +170,7 @@
 			},
 			{
 				"field": "WarehouseId",
-				"fieldLabel": "仓库",
+				"fieldLabel": "Warehouse",
 				"displayType": "REFERENCE",
 				"nullable": false,
 				"updatable": true,
@@ -183,7 +183,7 @@
 			},
 			{
 				"field": "IsOut",
-				"fieldLabel": "是否盘亏",
+				"fieldLabel": "IsOut",
 				"displayType": "BOOL",
 				"nullable": false,
 				"updatable": true,
@@ -193,7 +193,7 @@
 			},
 			{
 				"field": "ProductId",
-				"fieldLabel": "产品",
+				"fieldLabel": "Product",
 				"displayType": "REFERENCE",
 				"nullable": false,
 				"updatable": true,
@@ -206,7 +206,7 @@
 			},
 			{
 				"field": "Number",
-				"fieldLabel": "数量",
+				"fieldLabel": "Quantity",
 				"displayType": "NUMBER",
 				"nullable": false,
 				"updatable": true,
@@ -306,7 +306,7 @@
 					"useTransform": "037-0182680de8303a1a",
 					"transformOnce": false
 				},
-				"name": "盘亏出库",
+				"name": "Inventory loss",
 				"priority": 99,
 				"when": 128,
 				"whenTimer": "D:1:0:23"
@@ -328,7 +328,7 @@
 					"useTransform": "037-0182680f187e3a1b",
 					"transformOnce": false
 				},
-				"name": "盘盈入库",
+				"name": "Inventory surplus",
 				"priority": 99,
 				"when": 128,
 				"whenTimer": "D:1:0:23"
@@ -349,7 +349,7 @@
 					],
 					"readonlyFields": true
 				},
-				"name": "盘亏出库作废",
+				"name": "Inventory shortage will be cancelled",
 				"priority": 99,
 				"when": 256,
 				"whenTimer": "D:1:0:23"
@@ -370,7 +370,7 @@
 					],
 					"readonlyFields": true
 				},
-				"name": "盘盈入库作废",
+				"name": "Inventory surplus is voided",
 				"priority": 99,
 				"when": 256,
 				"whenTimer": "D:1:0:23"

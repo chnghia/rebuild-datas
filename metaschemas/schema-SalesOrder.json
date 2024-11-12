@@ -1,14 +1,14 @@
 {
 	"entity": "SalesOrder",
 	"entityIcon": "file-text",
-	"entityLabel": "订单",
-	"comments": "销售订单是企业与客户之间签订的一种销售协议，销售订单实现企业与客户之间的沟通，实现客户对企业待售货物的一种请求，同时也是企业对客户的一种销售承诺。通过订单信息的维护与管理，实现企业对销售的计划性控制，使企业的销售活动、生产活动、采购活动处于有序、流畅、高效的状态",
+	"entityLabel": "Order",
+	"comments": "A sales order is a sales agreement signed between an enterprise and a customer. It enables communication between the enterprise and the customer, realizes a customer's request for the goods to be sold by the enterprise, and is also a sales commitment made by the enterprise to the customer. Through the maintenance and management of order information, the enterprise can achieve planned control of sales, so that the enterprise's sales activities, production activities, and procurement activities are in an orderly, smooth, and efficient state.",
 	"nameField": "SalesOrderName",
 	"quickFields": "SalesOrderName,OrderNumber",
 	"fields": [
 		{
 			"field": "ContactId",
-			"fieldLabel": "联系人",
+			"fieldLabel": "Contact",
 			"displayType": "REFERENCE",
 			"nullable": true,
 			"updatable": true,
@@ -18,7 +18,7 @@
 		},
 		{
 			"field": "SalesOrderName",
-			"fieldLabel": "主题",
+			"fieldLabel": "Subject",
 			"displayType": "TEXT",
 			"nullable": false,
 			"updatable": true,
@@ -27,7 +27,7 @@
 		},
 		{
 			"field": "OrderNumber",
-			"fieldLabel": "订单编号",
+			"fieldLabel": "OrderNumber",
 			"displayType": "SERIES",
 			"nullable": false,
 			"updatable": false,
@@ -40,7 +40,7 @@
 		},
 		{
 			"field": "AccountId",
-			"fieldLabel": "相关客户",
+			"fieldLabel": "Account",
 			"displayType": "REFERENCE",
 			"nullable": false,
 			"updatable": true,
@@ -50,7 +50,7 @@
 		},
 		{
 			"field": "TotalAmount",
-			"fieldLabel": "订单金额",
+			"fieldLabel": "TotalAmount",
 			"displayType": "DECIMAL",
 			"nullable": true,
 			"updatable": true,
@@ -63,7 +63,7 @@
 		},
 		{
 			"field": "DueDate",
-			"fieldLabel": "到期日期",
+			"fieldLabel": "DueDate",
 			"displayType": "DATE",
 			"nullable": true,
 			"updatable": true,
@@ -164,7 +164,7 @@
 	},
 	"filters": [
 		{
-			"filterName": "我的订单",
+			"filterName": "My Orders",
 			"config": {
 				"items": [
 					{
@@ -181,7 +181,7 @@
 	"transforms": [],
 	"approvals": [
 		{
-			"name": "订单审批",
+			"name": "Order approval",
 			"flowDefinition": {
 				"nodes": [
 					{
@@ -214,13 +214,13 @@
 	"detail": {
 		"entity": "SalesOrderItem",
 		"entityIcon": "format-list-numbered",
-		"entityLabel": "订单明细",
+		"entityLabel": "Order Details",
 		"nameField": "Quantity",
 		"quickFields": "",
 		"fields": [
 			{
 				"field": "SubtotalAmount",
-				"fieldLabel": "小计金额",
+				"fieldLabel": "SubtotalAmount",
 				"displayType": "DECIMAL",
 				"nullable": false,
 				"updatable": true,
@@ -233,7 +233,7 @@
 			},
 			{
 				"field": "ProductId",
-				"fieldLabel": "产品",
+				"fieldLabel": "Product",
 				"displayType": "REFERENCE",
 				"nullable": false,
 				"updatable": true,
@@ -243,7 +243,7 @@
 			},
 			{
 				"field": "UnitPrice",
-				"fieldLabel": "单价",
+				"fieldLabel": "UnitPrice",
 				"displayType": "DECIMAL",
 				"nullable": false,
 				"updatable": true,
@@ -256,7 +256,7 @@
 			},
 			{
 				"field": "Quantity",
-				"fieldLabel": "数量",
+				"fieldLabel": "Quantity",
 				"displayType": "NUMBER",
 				"nullable": false,
 				"updatable": true,
@@ -316,7 +316,7 @@
 					],
 					"readonlyFields": true
 				},
-				"name": "订单明细小计",
+				"name": "Order Details Subtotal",
 				"priority": 19,
 				"when": 5,
 				"whenTimer": "D:1:0:23"
@@ -336,7 +336,7 @@
 					],
 					"readonlyFields": true
 				},
-				"name": "订单明细汇总到订单金额",
+				"name": "Order details are summarized into order amount",
 				"priority": 18,
 				"when": 7,
 				"whenTimer": "D:1:0:23"
