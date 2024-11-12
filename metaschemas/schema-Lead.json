@@ -2,7 +2,7 @@
 	"entity": "Lead",
 	"entityIcon": "pin-account",
 	"entityLabel": "Lead",
-	"comments": "Leads are the original information obtained from the first contact with customers. They can be business cards obtained from exhibitions, phone numbers obtained through promotional activities, or simple customer information obtained through conferences, advertisements, external purchases, etc., which can then be converted into customers through management and follow-up.",
+	"comments": "Leads are initial customer contact information, such as business cards from exhibitions or phone numbers from promotions, which can be converted into customers through follow-up and management.",
 	"nameField": "LeadName",
 	"quickFields": "",
 	"fields": [

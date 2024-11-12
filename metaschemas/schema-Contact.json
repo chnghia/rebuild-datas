@@ -2,7 +2,7 @@
   "entity": "Contact",
   "entityIcon": "account-box-phone",
   "entityLabel": "Contact",
-  "comments": "This refers to the person who is directly connected to the client. If it is a corporate client, the contact person is the person you communicate with the client. If it is an individual client, the contact person can be the communication contact person who has a relationship with the client.",
+  "comments": "This is the person directly connected to the client: for corporate clients, the main contact; for individual clients, a related communication contact.",
   "nameField": "ContactName",
   "quickFields": "ContactName,Mobile,Telephone",
   "fields": [

@@ -2,7 +2,7 @@
 	"entity": "SalesOrder",
 	"entityIcon": "file-text",
 	"entityLabel": "Order",
-	"comments": "A sales order is a sales agreement signed between an enterprise and a customer. It enables communication between the enterprise and the customer, realizes a customer's request for the goods to be sold by the enterprise, and is also a sales commitment made by the enterprise to the customer. Through the maintenance and management of order information, the enterprise can achieve planned control of sales, so that the enterprise's sales activities, production activities, and procurement activities are in an orderly, smooth, and efficient state.",
+	"comments": "A sales order is an agreement between a business and a customer that facilitates communication, fulfills requests, and supports sales commitments. Managing order info enables efficient, orderly sales, production, and procurement.",
 	"nameField": "SalesOrderName",
 	"quickFields": "SalesOrderName,OrderNumber",
 	"fields": [

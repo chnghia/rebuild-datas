@@ -2,7 +2,7 @@
 	"entity": "Product",
 	"entityIcon": "collection-item",
 	"entityLabel": "Product",
-	"comments": "Products are various valuable items, services, information, human resources, organizations, etc., or their combination, provided by enterprises to customers. They can be tangible or intangible. However, they can all be measured by some unit or combination of units and indicate their value. Products are the core of the services provided by enterprises, and the entire marketing business of enterprises revolves around products.",
+	"comments": "Products are valuable items, services, or resources—tangible or intangible—provided by enterprises and measured by units to indicate value. They are central to enterprise services, with all marketing efforts revolving around them.",
 	"nameField": "ProductName",
 	"quickFields": "ProductName",
 	"fields": [
